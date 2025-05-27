@@ -15,6 +15,70 @@
     <title>Saude + Simples</title>
 </head>
 <body>
-    
+    <a href="../index.html" class="voltar-home">← Voltar para Home</a>
+  <h1>Agenda de Medicamentos</h1>
+
+  <form id="medForm">
+    <label for="nome">Nome do Medicamento:</label>
+    <input type="text" id="nome" required />
+
+    <label for="horario">Horário:</label>
+    <input type="time" id="horario" required />
+
+    <label for="frequencia">Frequência:</label>
+    <select id="frequencia" required>
+      <option value="Diariamente">Diariamente</option>
+      <option value="A cada 8 horas">A cada 8 horas</option>
+      <option value="A cada 12 horas">A cada 12 horas</option>
+      <option value="Semanalmente">Semanalmente</option>
+    </select>
+
+    <button type="submit">Adicionar Medicamento</button>
+  </form>
+
+  <div class="med-list" id="medList"></div>
+
+  <script>
+    const form = document.getElementById('medForm');
+    const medList = document.getElementById('medList');
+
+    function carregarMedicamentos() {
+      const meds = JSON.parse(localStorage.getItem('medicamentos')) || [];
+      medList.innerHTML = '';
+      meds.forEach((med, index) => {
+        const div = document.createElement('div');
+        div.className = 'med-item';
+        div.innerHTML = `
+          <span><strong>${med.nome}</strong> - ${med.horario} - ${med.frequencia}</span>
+          <button onclick="removerMedicamento(${index})">Remover</button>
+        `;
+        medList.appendChild(div);
+      });
+    }
+
+    function removerMedicamento(index) {
+      const meds = JSON.parse(localStorage.getItem('medicamentos')) || [];
+      meds.splice(index, 1);
+      localStorage.setItem('medicamentos', JSON.stringify(meds));
+      carregarMedicamentos();
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const nome = document.getElementById('nome').value;
+      const horario = document.getElementById('horario').value;
+      const frequencia = document.getElementById('frequencia').value;
+
+      const novoMed = { nome, horario, frequencia };
+      const meds = JSON.parse(localStorage.getItem('medicamentos')) || [];
+      meds.push(novoMed);
+      localStorage.setItem('medicamentos', JSON.stringify(meds));
+
+      form.reset();
+      carregarMedicamentos();
+    });
+
+    window.onload = carregarMedicamentos;
+  </script>
 </body>
 </html>
