@@ -1,0 +1,82 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFFCF6;
+  margin: 0;
+  padding: 20px;
+  color: #296B64;
+}
+
+h1 {
+  color: #D87162;
+  text-align: center;
+}
+
+form {
+  background-color: #FFF9F0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ddd;
+  max-width: 500px;
+  margin: 0 auto 30px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #69AC93;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.med-list {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.med-item {
+  background-color: #87C0A3;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.med-item button {
+  background-color: #D87162;
+}
+
+.voltar-home {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: #D87162;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.voltar-home:hover {
+  background-color: #FFF9F0;
+}
