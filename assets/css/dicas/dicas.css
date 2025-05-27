@@ -1,0 +1,67 @@
+.container-dicas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-dicas {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    padding: 1% 0;
+}
+
+.image-dicas {
+    width: 50%;
+}
+.image-dicas img {
+    width: 100%;
+}
+
+.texto-dicas  {
+    width: 50%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-dicas h2 {
+    background-color: coral;
+    color: #fff9f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.texto-dicas p {
+    text-align: justify;
+}
+
+.titulo-dicas {
+    color: #296a64;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+/* filtro categorias */
+
+.filtro-categorias {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filtro-categorias button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #69AC93; /* verde médio */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filtro-categorias button:hover {
+  background-color: #296B64; /* verde escuro */
+}

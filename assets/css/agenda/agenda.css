@@ -1,8 +1,6 @@
 body {
-  font-family: 'Montserrat', sans-serif;
   background-color: #FFFCF6;
   margin: 0;
-  padding: 20px;
   color: #296B64;
 }
 
@@ -44,6 +42,10 @@ button {
   border-radius: 6px;
 }
 
+.container-agenda {
+  height: 100vh;
+}
+
 .med-list {
   max-width: 500px;
   margin: 0 auto;
@@ -64,7 +66,7 @@ button {
   background-color: #D87162;
 }
 
-.voltar-home {
+/*.voltar-home {
   display: inline-block;
   margin-bottom: 20px;
   margin-left: 20px;
@@ -79,4 +81,4 @@ button {
 
 .voltar-home:hover {
   background-color: #FFF9F0;
-}
+}*/

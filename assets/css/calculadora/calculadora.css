@@ -1,5 +1,4 @@
 body {
-  font-family: sans-serif;
   color: #D87162;
 }
 form {
@@ -38,7 +37,7 @@ button {
     height: 100vh;
 }
 
-.voltar-home {
+/*.voltar-home {
   display: inline-block;
   margin-bottom: 20px;
   margin-left: 20px;
@@ -53,4 +52,4 @@ button {
 
 .voltar-home:hover {
   background-color: #FFF9F0;
-}
+}*/

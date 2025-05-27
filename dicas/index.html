@@ -8,13 +8,88 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/common/style.css">
-    <link rel="stylesheet" href="../assets/css/common/header.css">
     <link rel="stylesheet" href="../assets/css/common/footer.css">
     <link rel="stylesheet" href="../assets/css/dicas/dicas.css">
 
     <title>Saude + Simples</title>
 </head>
 <body>
+    <a href="../index.html" class="voltar-home">← Voltar para Home</a>
+
+    <div id="carousel-dicas" class="container-dicas">
+        <h1 class="titulo-dicas">DICAS DE SAÚDE</h1>
+
+        <div>
+            <div class="filtro-categorias">
+                <button onclick="filtrarCategoria('todas')">Todas</button>
+                <button onclick="filtrarCategoria('Alimentação')">Alimentação</button>
+                <button onclick="filtrarCategoria('Exercícios')">Exercícios</button>
+                <button onclick="filtrarCategoria('Higiene')">Higiene</button>
+                <button onclick="filtrarCategoria('Saúde Mental')">Saúde Mental</button>
+            </div>
+        </div>
+
+        <div class="content-dicas" data-categoria="Alimentação"> 
+            <div class="image-dicas"> 
+                <img src="../assets/img/alimento.jpg" alt="Alimento">
+            </div> 
+            <div class="texto-dicas"> 
+                <h2>Alimentação</h2>
+                <p>
+                    Inclua frutas, legumes e alimentos naturais no seu dia a dia. Evite o consumo excessivo de alimentos ultraprocessados e beba bastante água.
+                </p>
+            </div> 
+        </div>
+
+        <div class="content-dicas" data-categoria="Exercícios"> 
+            <div class="image-dicas"> 
+                <img src="../assets/img/exercicio.jpg" alt="Alimento">
+            </div> 
+            <div class="texto-dicas"> 
+                <h2>Exercícios</h2>
+                <p>
+                    Praticar atividades físicas regularmente fortalece o corpo, melhora o humor e reduz o risco de doenças crônicas.
+                </p>
+            </div> 
+        </div>
+
+        <div class="content-dicas" data-categoria="Higiene"> 
+            <div class="image-dicas"> 
+                <img src="../assets/img/higiene.jpg" alt="Alimento">
+            </div> 
+            <div class="texto-dicas"> 
+                <h2>Higiene</h2>
+                <p>
+                    Manter uma boa higiene previne doenças, melhora a autoestima e contribui para o bem-estar geral.
+                </p>
+            </div> 
+        </div>
+
+        <div class="content-dicas" data-categoria="Saúde Mental"> 
+            <div class="image-dicas"> 
+                <img src="../assets/img/saude-mental.jpg" alt="Alimento">
+            </div> 
+            <div class="texto-dicas"> 
+                <h2>Saúde Mental</h2>
+                <p>
+                    Cuidar da mente é essencial. Reserve tempo para descansar, conversar com pessoas de confiança e buscar ajuda profissional quando necessário.
+                </p>
+            </div> 
+        </div>
+    </div>
+
+    <footer class="footer">
+        <section class="container footer-container">
+
+            <p class="text-mobile">
+                Site criado pelos alunos Arthur Felipe Acauan, Alessandra Souza Gracia, Bianca Alana Santos Lopes e Cristiane Sartori
+            </p>
+            <p class="text-mobile">
+                Turma 060513_20251_01
+            </p>
+        </section>
+    </footer>
     
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

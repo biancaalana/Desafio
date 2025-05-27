@@ -8,35 +8,49 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/common/style.css">
-    <link rel="stylesheet" href="../assets/css/common/header.css">
     <link rel="stylesheet" href="../assets/css/common/footer.css">
     <link rel="stylesheet" href="../assets/css/agenda/agenda.css">
 
     <title>Saude + Simples</title>
 </head>
-<body>
+<body >
     <a href="../index.html" class="voltar-home">← Voltar para Home</a>
-  <h1>Agenda de Medicamentos</h1>
+    
+    <div class="container-agenda">
+        <h1>Agenda de Medicamentos</h1>
 
-  <form id="medForm">
-    <label for="nome">Nome do Medicamento:</label>
-    <input type="text" id="nome" required />
+        <form id="medForm">
+            <label for="nome">Nome do Medicamento:</label>
+            <input type="text" id="nome" required />
 
-    <label for="horario">Horário:</label>
-    <input type="time" id="horario" required />
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" required />
 
-    <label for="frequencia">Frequência:</label>
-    <select id="frequencia" required>
-      <option value="Diariamente">Diariamente</option>
-      <option value="A cada 8 horas">A cada 8 horas</option>
-      <option value="A cada 12 horas">A cada 12 horas</option>
-      <option value="Semanalmente">Semanalmente</option>
-    </select>
+            <label for="frequencia">Frequência:</label>
+            <select id="frequencia" required>
+                <option value="Diariamente">Diariamente</option>
+                <option value="A cada 8 horas">A cada 8 horas</option>
+                <option value="A cada 12 horas">A cada 12 horas</option>
+                <option value="Semanalmente">Semanalmente</option>
+            </select>
 
-    <button type="submit">Adicionar Medicamento</button>
-  </form>
+            <button type="submit">Adicionar Medicamento</button>
+        </form>
 
-  <div class="med-list" id="medList"></div>
+        <div class="med-list" id="medList"></div>
+    </div>
+
+    <footer class="footer">
+        <section class="container footer-container">
+
+            <p class="text-mobile">
+                Site criado pelos alunos Arthur Felipe Acauan, Alessandra Souza Gracia, Bianca Alana Santos Lopes e Cristiane Sartori
+            </p>
+            <p class="text-mobile">
+                Turma 060513_20251_01
+            </p>
+        </section>
+    </footer>
 
   <script>
     const form = document.getElementById('medForm');
@@ -80,5 +94,6 @@
 
     window.onload = carregarMedicamentos;
   </script>
+  
 </body>
 </html>
