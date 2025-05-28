@@ -19,16 +19,15 @@ ul, body {
 .container {
     width: 80%;
     height: 100%;
-    max-width: 1360px;
     margin: 0 auto;
 }
 
 /* SECTION */
 
 .section {
-    position: relative;
-    height: 100vh;
+    display: flex;
     width: 100%;
+    align-items: center;
 }
 
 .content {
@@ -56,18 +55,32 @@ ul, body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     margin: 0;
-    font-size: 25px;
+    font-size: 105%;
     color: #296a64;
 }
 
 .tittle {
     font-family: "Opens Sans", sans-serif;
     font-weight: 500;
-    font-size: 100px;
+    font-size: 270%;
     color: #296a64;
     margin-top: 10px;
     margin-bottom: 30px;
     width: 56%;
+}
+
+.texto-sobre {
+    width: 100%;
+}
+
+.image-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+}
+
+.image-content {
+    width: 100%;
 }
 
 /* Voltar para o Home */
@@ -87,4 +100,55 @@ ul, body {
 
 .voltar-home:hover {
   background-color: #FFF9F0;
+}
+
+@media (min-width: 1360px) {
+    .text {
+        font-size: 130%;
+    }
+    .tittle {
+        font-size: 560%;
+    }
+}
+
+@media (min-width: 1224px) {
+    .tittle {
+        font-size: 450%;
+    }
+}
+
+@media (max-width: 720px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content .tittle{
+        font-size: 80px;
+        width: 100%;
+    }
+
+    .content .text{
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .about-message {
+        width: 100%;
+    }
+
+    .teste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .image-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .image-content {
+        width: 100%;
+    }
 }
